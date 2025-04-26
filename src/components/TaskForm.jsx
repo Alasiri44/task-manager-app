@@ -3,7 +3,7 @@ import { Form } from "react-router-dom";
 import { TaskContext } from "../context/taskContext";
 
 function TaskForm() {
-    const {setTasks} = useContext(TaskContext);
+    const {tasks, setTasks} = useContext(TaskContext);
     // function handling creation of a new form
     const [newTask, setNewTask] = useState('');
     const [deadline, setDeadline]  = useState('');
@@ -27,7 +27,7 @@ function TaskForm() {
             })
         })
         .then(res => res.json())
-        .then(data => console.log(data))
+        .then(data => setTasks(tasks => [...tasks, data]))
         .catch(err => console.error(err))
     }
     return (

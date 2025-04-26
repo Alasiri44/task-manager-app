@@ -10,7 +10,7 @@ function App(){
       < Navbar/>
       
       <div>
-        <h1 className="main-heading">Task Manager</h1>
+        <h2 className="main-heading">Task Manager</h2>
       </div>      
     </header>
       <Outlet/>

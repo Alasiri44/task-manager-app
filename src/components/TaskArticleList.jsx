@@ -3,8 +3,8 @@ import TaskArticle from "./TaskArticle";
 import { TaskContext } from "../context/taskContext";
 
 
-function TaskArticleList(){
-    const {tasks} = useContext(TaskContext);
+function TaskArticleList({tasks}){
+    
     if(!tasks){
         return <p>Loading...</p>
     }
