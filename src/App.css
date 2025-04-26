@@ -1,0 +1,17 @@
+nav a{
+  padding: 5px;
+  background-color: rgb(170, 171, 245);
+  margin: 5px;
+  border-radius: 12px;
+  text-decoration: none;
+}
+
+nav a.active{
+  background-color: rgb(54, 57, 236);
+}
+
+nav{
+  position: absolute;
+  top: 20px;
+  left: 10px;
+}
