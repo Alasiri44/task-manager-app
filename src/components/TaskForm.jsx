@@ -9,7 +9,7 @@ function TaskForm() {
     const [deadline, setDeadline]  = useState('');
     const [type, setType] = useState('');
 
-    
+    // handling the submit
     function handleSubmit(event){
         event.preventDefault();
         console.log(newTask, deadline, type)
